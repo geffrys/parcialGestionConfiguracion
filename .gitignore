@@ -1,0 +1,30 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore build output directories
+/target/
+/bin/
+/out/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore Maven specific files
+pom.xml
+target/
+
+# Ignore Gradle specific files
+build/
+.gradle/
+
+# Ignore log files
+*.log
+
+# Ignore generated files
+*.jar
+*.war
+*.ear
+
+
+basededatos/data/*
