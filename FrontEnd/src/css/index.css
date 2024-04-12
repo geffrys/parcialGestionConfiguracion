@@ -1,9 +1,19 @@
+
+*{
+  color-scheme: (light dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: var(--font-color);
+}
+
+
 form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 10px;
 }
 
 .form-group{
@@ -20,4 +30,79 @@ form{
 
 .form-group input{
   width: 200px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.button-register-login{
+  padding: 10px;
+  width: 200px;
+  color: var(--hipervinculos);
+  text-decoration: underline;
+}
+
+.button-register-login:hover{
+  cursor: pointer;
+}
+
+.buttons_container{
+  margin-top: 10px;
+}
+button{
+  padding: 10px;
+  width: 200px;
+  background-color: var(--button-background-color);
+  border: 1px solid var(--button-border-color);
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.form_container{
+  background-color: var(--form-background);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px
+}
+
+li{
+  list-style: none;
+}
+
+.menu_card{
+  padding: 50px 20px;
+  border-radius: 10px;
+  background-color: var(--form-background);
+  margin: 10px;
+}
+
+.menu_card:hover{
+  cursor: pointer;
+  background-color: var(--hover-background-color);
+}
+
+:root{
+  --form-background: #f0f0f0;
+  --hipervinculos: #0000ff;
+  --font-color: #000000;
+  --button-background-color: #fff;
+  --button-border-color: #000000;
+  --hover-background-color: #e0e0e0;
 }

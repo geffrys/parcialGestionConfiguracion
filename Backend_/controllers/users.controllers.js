@@ -103,10 +103,9 @@ export const LogIn = async (req, res) => {
 
     const token = await CreateAccesToken({ id: result[0].user_id });
     res.cookie("token", token);
-    console.log(token);
     res.json(result[0]);
   } catch (error) {
-    return res.status(404).json({ message: error.message });
+    res.status(500).json({ message: MENSAJES.ERROR });
   }
 };
 

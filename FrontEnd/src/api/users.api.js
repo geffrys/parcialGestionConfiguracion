@@ -9,7 +9,7 @@ export const createUserRequest = async (user) => {
 };
 
 export const loginUserRequest = async (user) => {
-  return await axios.post("http://localhost:3000/api/v1/users/login", user);
+  return await axios.post("http://localhost:3000/api/v1/users/login", user, {withCredentials: true});
 };
 
 export const verifyPasswordTokenRequest = async (user) => {
@@ -21,11 +21,11 @@ export const changePasswordRequest = async (user) => {
 };
 
 export const verifyTokenRequest = async () => {
-  return await axios.get(`http://localhost:3000/api/v1/users/verifytoken`);
+  return await axios.get(`http://localhost:3000/api/v1/users/verifytoken`, {withCredentials: true});
 };
 
 export const logOutRequest = async () =>
-  await axios.post(`http://localhost:3000/api/v1/users/logout`);
+  await axios.post(`http://localhost:3000/api/v1/users/logout`, {withCredentials: true});
 
 export const getUserById = async (id) => {
   return await axios.get(`http://localhost:3000/api/v1/users/${id}`);
