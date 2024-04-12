@@ -36,15 +36,13 @@ function LogIn() {
     <>
       <section>
 
-        <section>
-          {showLogin && <Login />}
-        </section>
-        <section >
-          {showRegister && <Register />}
-        </section>
-        <section>
-        {showLogin && <a onClick={showRegisterForm} className="">Register</a>}
-        {showRegister && <a onClick={showLoginForm} className="">Login</a>}
+        
+          {showLogin && <section className="form_container"><Login /></section>}
+        
+          {showRegister && <section className="form_container"><Register /></section>}
+        <section className="buttons_container">
+        {showLogin && <a onClick={showRegisterForm} className="button-register-login">Registrarse</a>}
+        {showRegister && <a onClick={showLoginForm} className="button-register-login">Loguearse</a>}
         </section>
 
       </section>

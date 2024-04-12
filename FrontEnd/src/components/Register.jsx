@@ -12,25 +12,10 @@ const Register = () => {
 
 
 
-
-  const commonToastStyle = {
-    borderRadius: "10px",
-    background: "var(--background-color-dark)",
-    color: "var(--primary-color)",
-  };
-
-
-
-
-
-
-
-
-
   const onSubmit = handleSubmit((data) => {
     let isValid = true;
 
-
+    
 
 
 

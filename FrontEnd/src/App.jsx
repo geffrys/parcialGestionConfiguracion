@@ -7,7 +7,6 @@ function App() {
   return (
     <main>
       <section className="content">
-        {isAuthenticated}
         <section className="each_page">
           <RoutesPG />
         </section>

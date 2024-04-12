@@ -1,5 +1,4 @@
 
-import { loginUserRequest } from "../api/users.api";
 import { Toaster, toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
@@ -40,11 +39,11 @@ const Login = () => {
             <Toaster />
             <form action="" onSubmit={onSubmit}>
                 <section className="form-group">
-                    <p>User Email</p>
+                    <p>Nombre de usuario</p>
                     <input type="text" {...register("user_username")} />
                 </section>
                 <section className="form-group">
-                    <p>Password</p>
+                    <p>Contraseña</p>
                     <input type="password" {...register("user_password")} />
                 </section>
 
