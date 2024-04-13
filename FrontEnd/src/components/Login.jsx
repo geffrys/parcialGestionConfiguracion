@@ -40,11 +40,11 @@ const Login = () => {
             <form action="" onSubmit={onSubmit}>
                 <section className="form-group">
                     <p>Nombre de usuario</p>
-                    <input type="text" {...register("user_username")} />
+                    <input type="text" maxLength={8} {...register("user_username")} />
                 </section>
                 <section className="form-group">
                     <p>Contraseña</p>
-                    <input type="password" {...register("user_password")} />
+                    <input type="password" maxLength={20} {...register("user_password")} />
                 </section>
 
                 <button type="submit" className="submit_button">

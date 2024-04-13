@@ -7,13 +7,14 @@ function Home() {
 
   const handleLogOut = async () => {
     await logOut();
-    toast.success("Sesion cerrada correctamente");
+    toast("Sesion cerrada", {
+      className: "toast",
+    });
   };
 
 
   return (
     <section className="home">
-      <Toaster />
       <h1>Bienvenido {user.user_name}</h1>
       <ul className="menu">
         <li>
