@@ -34,6 +34,20 @@ const Register = ({gotologin}) => {
 
 
   const onSubmit = handleSubmit((data) => {
+    if (data.user_birth_date) {
+      const currentDate = new Date();
+      const userBirthDate = new Date(data.user_birth_date);
+      const ageDifference = currentDate.getTime() - userBirthDate.getTime();
+      const ageInYears = Math.floor(ageDifference / (1000 * 3600 * 24 * 365));
+
+      if (ageInYears < 18) {
+        toast.error("Debes tener al menos 18 años para registrarte", {
+          className: "toast",
+        });
+        return;
+      }
+
+    }
     
     const res = signUp(data);
     if (res) {
@@ -139,16 +153,7 @@ const Register = ({gotologin}) => {
                 max: {
                   value: formattedDate,
                   message: "La fecha de nacimiento no puede ser mayor a la fecha actual."
-                },
-                min: {
-                  value: formattedMinDate,
-                  message: "debes tener minimo 18 años."
-                },
-                minDate: {
-                  value: formattedMinDate,
-                  message: "debes tener minimo 18 años."
                 }, required: "La fecha de nacimiento es requerida."
-
               }
 
             )} />
