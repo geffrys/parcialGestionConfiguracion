@@ -4,6 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   color: var(--font-color);
+  box-sizing: border-box;
 }
 
 
@@ -14,6 +15,7 @@ form{
   align-items: center;
   gap: 10px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .form-group{
@@ -22,7 +24,7 @@ form{
 }
 
 .form-group *{
-  margin: 5px;
+  margin: 0px 5px;
   padding: 5px 0px;
   text-align: left;
   width: 100%;
@@ -31,6 +33,15 @@ form{
 .form-group input{
   width: 200px;
 }
+
+.form-group div{
+  word-wrap: normal;
+  display: flex;
+  flex-direction: column;
+  text-wrap: normal;
+  max-width: 200px;
+}
+
 
 .content{
   display: flex;
@@ -98,6 +109,12 @@ li{
   background-color: var(--hover-background-color);
 }
 
+.error{
+  color: var(--error-color);
+  font-size: small;
+  text-wrap: normal;
+}
+
 :root{
   --form-background: #f0f0f0;
   --hipervinculos: #0000ff;
@@ -105,4 +122,5 @@ li{
   --button-background-color: #fff;
   --button-border-color: #000000;
   --hover-background-color: #e0e0e0;
+  --error-color: #ff0000;
 }

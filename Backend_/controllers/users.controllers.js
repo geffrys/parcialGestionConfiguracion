@@ -33,6 +33,7 @@ const MENSAJES = {
   USUARIO_LOGUEADO: "Usuario logueado",
   USUARIO_NO_CERRAR_SESION: "Usuario no cerro sesion",
   USUARIO_CERRAR_SESION: "Usuario cerro sesion",
+  REGISTRO_EXITOSO: "Registro exitoso",
 }
 
 export const newUser = async (req, res) => {
@@ -70,13 +71,11 @@ export const newUser = async (req, res) => {
       ]
     );
     let ids = result.insertId;
-    const token = await CreateAccesToken({ id: ids});
-
     const [user] = await pool.query("select * from users where user_id = ?", [
       ids,
     ]);
-    res.cookie("token", token);
-    res.json(user[0]);
+    user[0].password = "";
+    res.status(200).json({ message: MENSAJES.USUARIO_CREADO, user: user[0] });
   } catch (error) {
     return res.status(404).json({ message: error.message });
   }

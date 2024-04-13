@@ -39,7 +39,7 @@ function LogIn() {
         
           {showLogin && <section className="form_container"><Login /></section>}
         
-          {showRegister && <section className="form_container"><Register /></section>}
+          {showRegister && <section className="form_container"><Register gotologin={showLoginForm}/></section>}
         <section className="buttons_container">
         {showLogin && <a onClick={showRegisterForm} className="button-register-login">Registrarse</a>}
         {showRegister && <a onClick={showLoginForm} className="button-register-login">Loguearse</a>}
