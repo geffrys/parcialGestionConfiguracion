@@ -28,8 +28,6 @@ export const AuthProvider = ({ children }) => {
   const signUp = async (user) => {
     try {
       const res = await createUserRequest(user);
-      setIsAuthenticated(true);
-      setUser(res.data);
       return res;
     } catch (error) {
       console.log(error);
@@ -42,6 +40,7 @@ export const AuthProvider = ({ children }) => {
       const res = await loginUserRequest(user);
       setUser(res.data);
       setIsAuthenticated(true);
+      console.log(res.headers);
       return res.data;
     } catch (error) {
       toast.error(error.response.data.message, {
@@ -56,6 +55,7 @@ export const AuthProvider = ({ children }) => {
       const res = await logOutRequest();
       setIsAuthenticated(false);
       setUser(null);
+      Cookies.remove("token");
     } catch (error) {
       console.log(error);
       return;
