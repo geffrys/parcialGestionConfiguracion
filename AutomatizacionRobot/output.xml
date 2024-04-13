@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-04-13T01:21:36.024618" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\geffr\Documents\GitHub\parcialGestionConfiguracion\AutomatizacionRobot\test">
+<suite id="s1-s1" name="Scenaries" source="C:\Users\geffr\Documents\GitHub\parcialGestionConfiguracion\AutomatizacionRobot\test\Scenaries.robot">
+<test id="s1-s1-t1" name="Caso de prueba exitoso" line="24">
+<kw name="Abrir navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:36.197263" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173'.</msg>
+<msg time="2024-04-13T01:21:36.462345" level="WARN">The chromedriver version (122.0.6261.128) detected in PATH at C:\Chromedriver\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.107); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T01:21:36.197263" elapsed="1.430559"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-13T01:21:37.627822" elapsed="0.114687"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-13T01:21:42.747906" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-13T01:21:37.742509" elapsed="5.005397"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:36.196262" elapsed="6.551644"/>
+</kw>
+<kw name="Ir a formulario de registro">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:42.748907" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[2]/a'.</msg>
+<arg>xpath=${REGISTRARSE_HIPERVINCULO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:42.748907" elapsed="0.042823"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-13T01:21:47.795616" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-13T01:21:42.791730" elapsed="5.003886"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:42.747906" elapsed="5.047710"/>
+</kw>
+<kw name="Diligenciar el nit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:47.796616" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[1]/div/input'.</msg>
+<arg>xpath=${NIT_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:47.795616" elapsed="0.034723"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:47.831851" level="INFO">Typing text '123456789' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[1]/div/input'.</msg>
+<arg>xpath=${NIT_LOCATOR}</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:47.831851" elapsed="0.058338"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:47.795616" elapsed="0.094573"/>
+</kw>
+<kw name="Diligenciar el nombre">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:47.891695" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[2]/div/input'.</msg>
+<arg>xpath=${NOMBRE_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:47.890189" elapsed="0.034597"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:47.925787" level="INFO">Typing text 'Juan' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[2]/div/input'.</msg>
+<arg>xpath=${NOMBRE_LOCATOR}</arg>
+<arg>Juan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:47.924786" elapsed="0.048147"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:47.890189" elapsed="0.082744"/>
+</kw>
+<kw name="Diligenciar el segundo nombre">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:47.973932" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[3]/div/input'.</msg>
+<arg>xpath=${SEGUNDO_NOMBRE_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:47.972933" elapsed="0.033933"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.006866" level="INFO">Typing text 'Carlos' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[3]/div/input'.</msg>
+<arg>xpath=${SEGUNDO_NOMBRE_LOCATOR}</arg>
+<arg>Carlos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.006866" elapsed="0.043755"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:47.972933" elapsed="0.077688"/>
+</kw>
+<kw name="Diligenciar el apellido">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.051620" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[4]/div/input'.</msg>
+<arg>xpath=${APELLIDO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.051620" elapsed="0.030450"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.082070" level="INFO">Typing text 'Perez' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[4]/div/input'.</msg>
+<arg>xpath=${APELLIDO_LOCATOR}</arg>
+<arg>Perez</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.082070" elapsed="0.045820"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.050621" elapsed="0.077796"/>
+</kw>
+<kw name="Diligenciar el segundo apellido">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.128934" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[5]/div/input'.</msg>
+<arg>xpath=${SEGUNDO_APELLIDO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.128934" elapsed="0.032103"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.162050" level="INFO">Typing text 'Rodriguez' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[5]/div/input'.</msg>
+<arg>xpath=${SEGUNDO_APELLIDO_LOCATOR}</arg>
+<arg>Rodriguez</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.161037" elapsed="0.051729"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.128417" elapsed="0.084349"/>
+</kw>
+<kw name="Diligenciar la fecha de nacimiento">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.213766" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[6]/div/input'.</msg>
+<arg>xpath=${FECHA_NACIMIENTO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.213766" elapsed="0.029737"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.244506" level="INFO">Typing text '01/01/1990' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[6]/div/input'.</msg>
+<arg>xpath=${FECHA_NACIMIENTO_LOCATOR}</arg>
+<arg>01/01/1990</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.244506" elapsed="0.045638"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.212766" elapsed="0.077378"/>
+</kw>
+<kw name="Diligenciar el celular">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.291649" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[7]/div/input'.</msg>
+<arg>xpath=${CELULAR_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.290144" elapsed="0.030586"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.321730" level="INFO">Typing text '3001234567' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[7]/div/input'.</msg>
+<arg>xpath=${CELULAR_LOCATOR}</arg>
+<arg>3001234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.320730" elapsed="0.050248"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.290144" elapsed="0.080834"/>
+</kw>
+<kw name="Diligenciar el correo">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.371976" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[8]/div/input'.</msg>
+<arg>xpath=${CORREO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.371976" elapsed="0.031713"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.403689" level="INFO">Typing text 'geffry.ospina@gmail.com' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[8]/div/input'.</msg>
+<arg>xpath=${CORREO_LOCATOR}</arg>
+<arg>geffry.ospina@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.403689" elapsed="0.070349"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.371976" elapsed="0.102062"/>
+</kw>
+<kw name="Diligenciar el nombre de usuario">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.475038" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[9]/div/input'.</msg>
+<arg>xpath=${NOMBRE_USUARIO_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.475038" elapsed="0.031923"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.506961" level="INFO">Typing text 'geffry' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[9]/div/input'.</msg>
+<arg>xpath=${NOMBRE_USUARIO_LOCATOR}</arg>
+<arg>geffry</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.506961" elapsed="0.044799"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.475038" elapsed="0.076722"/>
+</kw>
+<kw name="Diligenciar la contraseña">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.551760" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[10]/div/input'.</msg>
+<arg>xpath=${CONTRASENA_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.551760" elapsed="0.029847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:48.582693" level="INFO">Typing text '123456' into text field 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/section[10]/div/input'.</msg>
+<arg>xpath=${CONTRASENA_LOCATOR}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.581607" elapsed="0.045144"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.551760" elapsed="0.074991"/>
+</kw>
+<kw name="Enviar formulario">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-13T01:21:53.638375" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-13T01:21:48.627751" elapsed="5.010624"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:53.638902" level="INFO">Clicking element 'xpath=/html/body/div/main/section/section/section/section[1]/section/form/button'.</msg>
+<arg>xpath=${REGISTRARSE_BUTTON_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-13T01:21:53.638375" elapsed="0.037656"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-13T01:21:58.691088" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-13T01:21:53.676031" elapsed="5.015057"/>
+</kw>
+<status status="PASS" start="2024-04-13T01:21:48.627751" elapsed="10.063337"/>
+</kw>
+<kw name="Comprobar registro exitoso">
+<kw name="Page Should Contain Button" owner="SeleniumLibrary">
+<msg time="2024-04-13T01:21:58.714149" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: [WinError 3] The system cannot find the path specified: ''</msg>
+<msg time="2024-04-13T01:21:58.714149" level="FAIL">Page should have contained button 'locator' but did not.</msg>
+<arg>locator</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<status status="FAIL" start="2024-04-13T01:21:58.692088" elapsed="0.032226">Page should have contained button 'locator' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-04-13T01:21:58.691088" elapsed="0.034225">Page should have contained button 'locator' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-04-13T01:21:36.196262" elapsed="22.529051">Page should have contained button 'locator' but did not.</status>
+</test>
+<doc>Ejemplo de base de escenarios en Robot Framework</doc>
+<status status="FAIL" start="2024-04-13T01:21:36.042647" elapsed="22.683665"/>
+</suite>
+<status status="FAIL" start="2024-04-13T01:21:36.025616" elapsed="22.701697"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Scenaries">Test.Scenaries</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-13T01:21:36.462345" level="WARN">The chromedriver version (122.0.6261.128) detected in PATH at C:\Chromedriver\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.107); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-13T01:21:58.714149" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: [WinError 3] The system cannot find the path specified: ''</msg>
+</errors>
+</robot>
