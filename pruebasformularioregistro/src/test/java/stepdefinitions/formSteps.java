@@ -93,10 +93,10 @@ public class formSteps {
         return user;
     }
 
-    /*@After
+    @After
     public void quit(){
         this.driver.quit();
-    }*/
+    }
 
 
 }

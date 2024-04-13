@@ -10,15 +10,15 @@ Feature: probar formulario de registro.
     Examples:
 
       | nit        | name                 | middleName         | lastName     | secondLastName       | birthDate  | phone      | mail                    | userName | password  |
-      | 1039425632 | Juan                 | Andres             | Alvarez      | Gomez                | 01/04/2006 | 3102459822 | mariagarcia@example.com | Marials1 | Guitaar2  |
       | 1039425658 | Beatriz              | Enriqueta          | Montecristo  | Fernandez            | 01/04/2005 | 3102459822 | betty125@example.com    | Emontec3 | C1234556  |
+      | 1039425632 | Juan                 | Andres             | Alvarez      | Gomez                | 01/04/2006 | 3102459822 | mariagarcia@example.com | Marials1 | Guitaar2  |
       | 1039425888 | Mariangel            | delasmercedes      | Gonzalez     | Rodriguez            | 01/04/2000 | 3102459777 | maria@gmail.com         | Emontec4 | 67667fsss |
       | 1039425658 | Mariangel            | Enriqueta          | Rodriguez    | Alvarez              | 01/04/2000 | 3102459822 | maria@gmail.com         | Marials4 | dfdfwdf4r |
       | 1039425888 | Beatriz              | delasmercedes      | Fernandez    | Montecristo          | 01/04/2005 | 3102459777 | mariagarcia@example.com | Marials7 | arfefddd  |
       | 1039425632 | Andres               | Juan               | Gomez        | Gonzalez             | 01/04/2006 | 3102459777 | betty125@example.com    | Emontec7 | dfdfwdf4r |
-      | 1039535632 | Carlos               | Manuel             | Montemayor   | Villanueva           | 20/01/1999 | 3147589633 | Manu52365779@gmail.com  | Emontec8 | dfdfwdf4r |
+      | 1039535632 | Carlos               | Manuel             | Montemayor   | Villanueva           | 01/04/2001 | 3147589633 | Manu52365779@gmail.com  | Emontec8 | dfdfwdf4r |
       | 1129535632 | cccaaarlosssssssssta | Meritaaa           | Florez       | Valle                | 01/01/1965 | 3221459855 | c12c@example.com        | Emontec9 | dfdfwdf4r |
-      | 9854246321 | Guadalupe            | Consuelo           | Guzman       | delaRosa           | 31/12/2001 | 3112458755 | delar.54@hotmail.com    | Emontec0 | dfdfwdf4r |
+      | 9854246321 | Guadalupe            | Consuelo           | Guzman       | delaRosa             | 01/04/2000 | 3112458755 | delar.54@hotmail.com    | Emontec0 | dfdfwdf4r |
       | 5211123987 | Adolph               | fsvonhinzwischenst | Yuzeptamente | Wolfeschlegelsteinan | 12/07/1990 | 3541258963 | ado.154loi@gmail.com    | Marials2 | dfdfwdf4r |
 
 
